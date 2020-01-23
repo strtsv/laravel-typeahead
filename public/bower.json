@@ -1,0 +1,18 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/jsusilo/laravel-typeahead",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "^2.5.0",
+    "bootstrap": "^4.4.1"
+  }
+}

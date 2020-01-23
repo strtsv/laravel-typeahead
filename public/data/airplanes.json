@@ -1,0 +1,32 @@
+[
+  {
+    "registration": "C-FNND",
+    "operator": "Air Canada",
+    "manufacturer": "Boeing",
+    "type": "777-200"
+  },
+  {
+    "registration": "PH-BFW",
+    "operator": "KLM Royal Dutch Airlines",
+    "manufacturer": "Boeing",
+    "type": "747-400"
+  },
+  {
+    "registration": "N124US",
+    "operator": "US Airways",
+    "manufacturer": "Airbus",
+    "type": "A320-200"
+  },
+  {
+    "registration": "A6-EEU",
+    "operator": "Emirates",
+    "manufacturer": "Airbus",
+    "type": "A380-800"
+  },
+  {
+    "registration": "VH-LQL",
+    "operator": "Qantas",
+    "manufacturer": "Bombardier",
+    "type": "DHC-8-400"
+  }
+]
