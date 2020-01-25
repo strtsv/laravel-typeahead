@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 angular
-  .module('airplanesApp')
-  .controller('AirplanesCtrl', function($scope, $http) {
-    $http.get('data/airplanes.json').success(function(data) {
-      $scope.airplanes = data;
+    .module("airplanesApp")
+    .controller("AirplanesCtrl", function($scope, $http) {
+        $http.get("data/airplanes.json").then(function(data) {
+            $scope.airplanes = data;
+        });
     });
-  });
