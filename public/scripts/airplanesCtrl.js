@@ -3,7 +3,9 @@
 angular
     .module("airplanesApp")
     .controller("AirplanesCtrl", function($scope, $http) {
-        $http.get("data/airplanes.json").then(function(data) {
-            $scope.airplanes = data;
-        });
+        $scope.getAirplane = function(term) {
+            return $http.get("api/airplanes/" + term).then(function(data) {
+                return data.data;
+            });
+        };
     });

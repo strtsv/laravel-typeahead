@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <h1>Airplane Search</h1>
-                <input type="text" class="form-control" ng-model="selectedAirplane" typeahead="airplane as airplane.registration for airplane in airplanes | filter:$viewValue | limitTo:3" placeholder="Search for an airplane" typeahead-template-url="templates/airplane-tpl.html">
+                <input type="text" class="form-control" ng-model="selectedAirplane" typeahead="airplane as airplane.registration for airplane in getAirplane($viewValue) | filter:$viewValue | limitTo:3" placeholder="Search for an airplane" typeahead-template-url="templates/airplane-tpl.html">
             </div>
         </div>
         <div class="row">
