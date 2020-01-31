@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+//use Illuminate\Http\Request;
+//use Response;
+//use App\Airplane;
 
 class AirplanesController extends Controller
 {
@@ -13,8 +16,7 @@ class AirplanesController extends Controller
 			->orWhere('operator', 'LIKE', '%' . $term . '%')
 			->orWhere('manufacturer', 'LIKE', '%' . $term . '%')
 			->orWhere('type', 'LIKE', '%' . $term . '%')
-			->get();
-
-		return Response::json($airplanes, 200);
+            ->get();
+		return response()->json($airplanes);
 	}
 }

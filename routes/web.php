@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('index');
 });
+/*Route::group(array('prefix'=>'api'), function()
+{
+	Route::resource('airplanes', 'AirplanesController', array('only' => 'show'));
+});
+*/
